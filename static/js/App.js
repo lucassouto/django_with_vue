@@ -1,5 +1,8 @@
 import Vue from 'vue'
-import VueRecource from 'vue-resource'
-import Exemplo from './components/exemplo.js'
+import VueResource from 'vue-resource'
+import Exemplo from './components/example.vue'
+import lodash from 'lodash'
 
-new Vue(Exemplo).$mount('.container')
+Vue.use(VueResource, lodash)
+
+new Vue(Exemplo).$mount('.exemplo')
